@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>プライバシーポリシー | 動画投稿ツール</title>
+<meta name="description" content="動画投稿ツールのプライバシーポリシー。">
+<link rel="stylesheet" href="_style.css">
+</head>
+<body>
+<div class="wrap">
+<nav><a href="./">ホーム</a><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a></nav>
+
+<h1>プライバシーポリシー</h1>
+<p class="lead">「動画投稿ツール」（以下、本ツール）における情報の取り扱いについて定めます。</p>
+
+<h2>1. 本ツールの性質</h2>
+<p>本ツールは、利用者自身の端末上で動作するローカルアプリケーションです。運営者が管理するサーバーは存在せず、
+利用者の情報が運営者に送信されることはありません。</p>
+
+<h2>2. 取得する情報</h2>
+<p>Google アカウントの認可（OAuth 2.0）により、以下の権限に対応するアクセストークンおよび更新トークンを取得します。</p>
+<ul>
+  <li><code>https://www.googleapis.com/auth/youtube.upload</code> — 動画のアップロード</li>
+  <li><code>https://www.googleapis.com/auth/youtube.force-ssl</code> — 字幕トラックの登録</li>
+</ul>
+<p>氏名、メールアドレス、連絡先、位置情報、閲覧履歴などの個人情報は取得しません。</p>
+
+<h2>3. 情報の保存場所</h2>
+<p>取得したトークンは、本ツールを実行している端末のローカルファイル（<code>token.json</code>）にのみ保存されます。
+外部への送信、第三者への提供、販売、共有は一切行いません。</p>
+
+<h2>4. 情報の利用目的</h2>
+<p>取得した権限は、利用者本人のYouTubeチャンネルへ動画と字幕をアップロードする目的にのみ使用します。
+これ以外の目的には使用しません。</p>
+
+<h2>5. 第三者への提供</h2>
+<p>行いません。本ツールが通信する相手は Google の API エンドポイントのみです。</p>
+
+<h2>6. Google ユーザーデータの取り扱い</h2>
+<p>本ツールによる Google ユーザーデータの使用は、
+<a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API サービスのユーザーデータに関するポリシー</a>
+（限定使用の要件を含む）に準拠します。</p>
+
+<h2>7. アクセス権の取り消し</h2>
+<p>付与した権限は、<a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google アカウントのセキュリティ設定</a>
+からいつでも取り消せます。また、端末上の <code>token.json</code> を削除することでも無効化できます。</p>
+
+<h2>8. 本ポリシーの変更</h2>
+<p>内容を変更する場合は、本ページを更新します。</p>
+
+<footer>
+  お問い合わせ: nikechannel.20@gmail.com<br>
+  最終更新: 2026年11月12日
+</footer>
+</div>
+</body>
+</html>
